@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/04/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="标签块的使用">标签块的使用</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">{% note default %}</span><br><span class="line">default 提示块标籤</span><br><span class="line">{% endnote %}</span><br><span class="line"></span><br><span class="line">{% note primary no-icon %}</span><br><span class="line">primary 提示块标籤</span><br><span class="line">{% endnote %}</span><br><span class="line"></span><br><span class="line">{% note success %}</span><br><span class="line">success 提示块标籤</span><br><span class="line">{% endnote %}</span><br><span class="line"></span><br><span class="line">{% note info %}</span><br><span class="line">info 提示块标籤</span><br><span class="line">{% endnote %}</span><br><span class="line"></span><br><span class="line">{% note warning %}</span><br><span class="line">warning 提示块标籤</span><br><span class="line">{% endnote %}</span><br><span class="line"></span><br><span class="line">{% note danger %}</span><br><span class="line">danger 提示块标籤</span><br><span class="line">{% endnote %}</span><br></pre></td></tr></tbody></table></figure>
+<div class="note default">
+            <p>default 提示块标籤</p>
+          </div>
+<div class="note primary no-icon">
+            <p>primary 提示块标籤</p>
+          </div>
+<div class="note success">
+            <p>success 提示块标籤</p>
+          </div>
+<div class="note info">
+            <p>info 提示块标籤</p>
+          </div>
+<div class="note warning">
+            <p>warning 提示块标籤</p>
+          </div>
+<div class="note danger">
+            <p>danger 提示块标籤</p>
+          </div>
+<hr>
+<p>如果你想把一些文字、内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标籤外挂。</p>
+<p>写法：</p>
+<p><code>inline</code> 在文本里面添加按钮隐藏内容，只限文字</p>
+<p>( content 不能包含当引号，可用 <code>&amp;apos;</code>)</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">{% hideInline content,display,bg,color %}</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>content: 文本内容</li>
+<li>display: 按钮显示的文字 (可选)</li>
+<li>bg: 按钮的背景颜色 (可选)</li>
+<li>color: 按钮文字的颜色 (可选)</li>
+</ul>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">哪个英文字母最酷？ {% hideInline 因为西装裤(C装酷),查看答案,#FF7242,#fff %}</span><br><span class="line"></span><br><span class="line">门里站着一个人? {% hideInline 闪 %}</span><br></pre></td></tr></tbody></table></figure>
+<p>哪个英文字母最酷？ <span class="hide-inline"><a class="hide-button button--primary button--animated" style="color:#fff;background-color:#FF7242">查看答案
+    </a><span class="hide-content">因为西装裤(C装酷)</span></span></p>
+<p>门里站着一个人? <span class="hide-inline"><a class="hide-button button--primary button--animated" style="color:#fff;">Click
+    </a><span class="hide-content">闪</span></span></p>
+<p>😂</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+  </entry>
+  <entry>
+    <title>博客搭建</title>
+    <url>/2019/10/28/%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="搭建HEXO">搭建HEXO</h3>
+<hr>
+<h4 id="安装前提">安装前提</h4>
+<ol>
+<li>安装<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js</a></li>
+<li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a></li>
+</ol>
+<hr>
+<h4 id="安装hexo">安装hexo</h4>
+<ul>
+<li>
+<p>使用npm安装hexo</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li>
+<p>初始化</p>
+<div class="note info">
+            <p>以windows环境为例，我的博客建立在<code>E:\Blog</code>，进入<code>E:\Blog</code>执行命令</p>
+          </div>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></tbody></table></figure>
+<div class="note success">
+            <p>执行完成后，将在<code>E:\Blog</code>生成相应的文件，目录如下</p>
+          </div>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">.</span><br><span class="line"></span><br><span class="line">|-- _config.yml                              网站的配置信息，可以配置大部分参数</span><br><span class="line"></span><br><span class="line">|-- package.json</span><br><span class="line"></span><br><span class="line">|-- scaffods</span><br><span class="line"></span><br><span class="line">|-- source</span><br><span class="line"></span><br><span class="line"><span class="code">    |-- _drafts</span></span><br><span class="line"></span><br><span class="line"><span class="code">    |-- _posts                                 存放MD文件</span></span><br><span class="line"></span><br><span class="line">|-- themes                                     主题文件夹</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<hr>
+<h4 id="生成静态页面">生成静态页面</h4>
+<p>通过<code>hexo g</code>生成静态文件，会在根目录<code>E:\Blog\</code>下生成<code>public</code>文件夹，里面包含相应的html页面。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h4 id="启动服务器">启动服务器</h4>
+<p>通过<code>hexo s</code>启动服务器，打开浏览器，输入网址http://localhost:4000/ 即可看到hexo生成的静态网页。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
+<p>至此，hexo博客就搭建完毕。</p>
+<p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/Natsuwinds/img/img/20200410113316.png"  alt="img"></p>
+<hr>
+<h3 id="应用Butterfly主题">应用Butterfly主题</h3>
+<p>在官网的主题页面选择自己心仪的主题，这里选择以<code>Butterfly主题</code>来应用</p>
+<p>参考：<a href="https://jerryc.me" target="_blank" rel="noopener">Butterfly主题展示页面</a> <a href="https://jerryc.me/posts/21cfbf15" target="_blank" rel="noopener">官方的配置文档</a></p>
+<hr>
+<h4 id="主题安装">主题安装</h4>
+<ul>
+<li>
+<p>下载主题</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly</span><br></pre></td></tr></tbody></table></figure>
+<div class="note info">
+            <p>hexo 4.2以上的系统需要安装<code>cheerio</code></p><p><code>npm install cheerio@0.22.0 –save</code></p>
+          </div>
+</li>
+<li>
+<p>安装pub和stylus渲染器</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<hr>
+<h4 id="主题应用">主题应用</h4>
+<ul>
+<li>
+<p>修改配置文件<code>_config.yml</code>，找到theme，把<code>landscape</code>修改成<code>Butterfly</code>，例如我的在<code>E:\Blog\</code>下，修改<code>_config.yml</code>即可</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">theme: Butterfly</span><br></pre></td></tr></tbody></table></figure>
+<p>推荐把主题默认的配置文件<code>_config.yml</code>复製到 Hexo 工作目录下的<code>source/_data/butterfly.yml</code>，如果<code>source/_data</code>的目录不存在那就创建一个。</p>
+<div class="note info">
+            <p>注意，如果你创建了<code>butterfly.yml</code>, 它将会替换主题默认配置文件<code>_config.yml</code>里的配置项 (不是合并而是替换), 之后你就只需要通过<code>git pull</code>的方式就可以<code>平滑地升级 theme-butterfly</code>了。</p>
+          </div>
+</li>
+<li>
+<p>依次执行以下命令</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
+<p>刷新http://localhost:4000 ,可以看到更新后的主题。</p>
+<p>详细的细节可以通过参考<a href="https://jerryc.me/posts/dc584b87/" target="_blank" rel="noopener">文档</a>进行更改。</p>
+</li>
+</ul>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>hexo安装</tag>
+        <tag>Butterfly主题</tag>
+      </tags>
+  </entry>
+</search>
